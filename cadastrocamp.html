@@ -1,0 +1,394 @@
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro de Campo | Bola na Rede | Encontre Campos</title>
+  <meta name="description" content="Cadastre seu campo ou encontre campos disponíveis na sua região. Plataforma Bola na Rede conecta jogadores de futebol em Salvador e região metropolitana." />
+  <meta name="keywords" content="campo, futebol, cadastro, Salvador, Bahia, jogadores, bola na rede" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Cadastro de Campo | Bola na Rede" />
+  <meta property="og:description" content="Cadastre seu campo ou encontre campos disponíveis na sua região. Conecte-se com jogadores de futebol." />
+  <link rel="stylesheet" href="css/stylegol.css" />
+  <style>
+    /* Content Section Styles (cleaned from original inline) */
+    .content-section {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 0 42px;
+    }
+    .content-image-container {
+      position: relative;
+      width: 38%;
+      height: 380px;
+      margin-left: 14px;
+    }
+    .content-background {
+      width: 482px;
+      height: 360px;
+      background-color: #0b7726;
+      border-radius: 14px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .content-image {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 476px;
+      height: 356px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+    .content-text-container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-end;
+      align-self: flex-end;
+    }
+    .content-title {
+      width: 64%;
+      font-size: 35px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+      line-height: 24px;
+      color: #000000;
+      margin-right: 58px;
+      margin-bottom: 20px;
+    }
+    .content-description {
+      width: 72%;
+      font-size: 20px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      line-height: 24px;
+      color: #000000;
+    }
+    @media (max-width: 639px) {
+      .content-section {
+        flex-direction: column;
+        padding: 16px;
+        gap: 20px;
+      }
+      .content-image-container {
+        width: 100%;
+        height: 250px;
+        margin-left: 0;
+      }
+      .content-background {
+        width: 100%;
+        height: 200px;
+      }
+      .content-image {
+        width: 100%;
+        height: 200px;
+      }
+      .content-text-container {
+        align-items: center;
+        align-self: center;
+      }
+      .content-title {
+        width: 100%;
+        font-size: 28px;
+        line-height: 32px;
+        margin-right: 0;
+        text-align: center;
+      }
+      .content-description {
+        width: 100%;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+      }
+    }
+    @media (min-width: 640px) {
+      .content-title {
+        font-size: 32px;
+        line-height: 28px;
+      }
+      .content-description {
+        font-size: 18px;
+        line-height: 22px;
+      }
+    }
+    @media (min-width: 768px) {
+      .content-title {
+        font-size: 33px;
+        line-height: 26px;
+      }
+      .content-description {
+        font-size: 19px;
+        line-height: 23px;
+      }
+    }
+    @media (min-width: 1024px) {
+      .content-title {
+        font-size: 35px;
+        line-height: 24px;
+      }
+      .content-description {
+        font-size: 20px;
+        line-height: 24px;
+      }
+    }
+
+    /* Stats Section Styles (adapted from stylecad.css for simple structure) */
+    .stats-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 100%;
+      max-width: 1426px;
+      margin: 0 auto;
+      padding: 0 4px;
+    }
+    .stat-group {
+      display: flex;
+      align-items: flex-start;
+      padding: 0 56px;
+    }
+    .stat-number {
+      font-size: 80px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      line-height: 97px;
+      align-self: center;
+    }
+    .stat-number.green {
+      color: #0b7726;
+    }
+    .stat-number.teal {
+      color: #029e2a;
+    }
+    .stat-number.bright-green {
+      color: #1af351;
+    }
+    .stat-plus {
+      width: 26px;
+      height: 30px;
+      margin-top: 30px;
+      margin-left: 8px;
+    }
+    .stat-label {
+      font-size: 20px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      line-height: 24px;
+      color: #000000;
+      margin-top: 36px;
+      margin-left: 8px;
+    }
+    .stat-label.right {
+      width: 10%;
+      margin-top: 30px;
+      margin-left: 0;
+    }
+    @media (max-width: 639px) {
+      .stats-section {
+        flex-direction: column;
+        gap: 32px;
+        align-items: center;
+      }
+      .stat-group {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0 16px;
+      }
+      .stat-number {
+        font-size: 48px;
+        line-height: 58px;
+      }
+      .stat-label {
+        margin-top: 8px;
+        margin-left: 0;
+        text-align: center;
+      }
+    }
+    @media (min-width: 640px) and (max-width: 767px) {
+      .stat-number {
+        font-size: 60px;
+        line-height: 72px;
+      }
+    }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .stat-number {
+        font-size: 64px;
+        line-height: 77px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Browser Header -->
+    <header class="header">
+      <!-- Main Navigation -->
+      <div class="main-header">
+        <div class="header-content">
+          <div class="logo-section">
+            <img src="img/node-168.png" alt="Bola na Rede Logo" class="logo" />
+            <img src="img/address-62.png" alt="Localização" style="width: 48px; height: 26px; margin-top: 8px;" />
+            <div class="location-info">
+              <div class="location-text">Informe sua cidade e encontre</div>
+              <div style="display: flex; align-items: center; gap: 8px;">
+                <span class="location-subtext">um baba próximo de você</span>
+                <img src="img/forward-107.png" alt="Seta" style="width: 26px; height: 22px;" />
+              </div>
+            </div>
+          </div>
+          <nav class="nav-menu" role="navigation">
+            <a href="#" class="nav-item" role="menuitem">Cadastre seu Goleiro</a>
+            <div style="display: flex; align-items: center; gap: 10px;" role="menuitem" aria-haspopup="true" aria-expanded="false">
+              <a href="#" class="nav-item">Como funciona</a>
+              <img src="img/forward-107.png" alt="Dropdown" style="width: 26px; height: 22px;" />
+            </div>
+            <div style="display: flex; align-items: center; gap: 10px;" role="menuitem" aria-haspopup="true" aria-expanded="false">
+              <a href="#" class="nav-item">Ajuda</a>
+              <img src="img/forward-107.png" alt="Dropdown" style="width: 26px; height: 22px;" />
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section with Registration Form -->
+      <section class="hero-section">
+        <img src="img/rectangle-19-49.png" alt="Campo de futebol" class="hero-background" />
+        <div class="hero-content">
+          <!-- Registration Form -->
+          <form class="registration-form" role="form" aria-label="Campo Registration Form">
+            <div class="form-group">
+              <label for="name" class="form-label">NOME DO CAMPO*</label>
+              <input type="text" id="name" name="name" class="form-input" required aria-required="true" />
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">EMAIL*</label>
+              <input type="email" id="email" name="email" class="form-input" required aria-required="true" />
+            </div>
+            <div class="form-group">
+              <label for="phone" class="form-label">TELEFONE*</label>
+              <input type="tel" id="phone" name="phone" class="form-input" placeholder="(71) 99999-9999" required aria-required="true" />
+            </div>
+            <div class="form-group">
+              <label for="city" class="form-label">CIDADE*</label>
+              <select id="city" name="city" class="form-select" required aria-required="true">
+                <option value>Selecione a cidade</option>
+                <option value="salvador">Salvador</option>
+                <option value="lauro-freitas">Lauro de Freitas</option>
+                <option value="camacari">Camaçari</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="neighborhood" class="form-label">BAIRRO*</label>
+              <select id="neighborhood" name="neighborhood" class="form-select" required aria-required="true">
+                <option value>Selecione o bairro</option>
+                <option value="brotas">Brotas</option>
+                <option value="paralela">Paralela</option>
+                <option value="caminho-arvores">Caminho das Árvores</option>
+              </select>
+            </div>
+            <button type="submit" class="submit-btn">Confirmar</button>
+          </form>
+          <!-- Hero Titles -->
+          <div class="hero-titles">
+            <div class="hero-title">CADASTRE</div>
+            <div class="hero-title outline">SEU</div>
+            <div class="hero-title">CAMPO</div>
+          </div>
+        </div>
+      </section>
+      <!-- Progress Bar -->
+      <div class="progress-bar">
+        <div class="progress-segment progress-active" style="width: 14%;"></div>
+        <div class="progress-segment progress-inactive" style="width: 14%;"></div>
+        <div class="progress-segment progress-inactive" style="width: 14%;"></div>
+        <div class="progress-segment progress-active" style="width: 14%;"></div>
+        <div class="progress-segment progress-inactive" style="width: 14%;"></div>
+        <div class="progress-segment progress-active" style="width: 14%;"></div>
+        <div class="progress-segment progress-inactive" style="width: 16%;"></div>
+      </div>
+      <!-- Campos Section -->
+      <section class="content-section">
+        <div class="content-image-container">
+          <div class="content-background"></div>
+          <img src="img/oip-1-76.png" alt="Jogador de futebol em ação" class="content-image" />
+        </div>
+        <div class="content-text-container">
+          <h2 class="content-title">VENHA CADASTRAR SEU CAMPO COM A GENTE</h2>
+          <p class="content-description">
+            No Bola na Rede, facilitamos sua paixão pelo futebol! Encontre e reserve campos pertinho de você, contrate goleiros de aluguel para completar seu time e acompanhe o scout dos campeonatos amadores para ficar sempre um passo à frente. E não para por aí: trazemos as principais notícias do futebol profissional para você estar por dentro de tudo que rola nos gramados. Tudo isso em um só lugar, feito para quem vive futebol intensamente. Venha jogar com a gente e levar seu jogo para outro nível!
+          </p>
+        </div>
+      </section>
+      <!-- Statistics Section -->
+      <section class="stats-section">
+        <div class="stat-group">
+          <span class="stat-number green">300</span>
+          <img src="img/plus-87.png" alt="Mais" class="stat-plus" />
+          <span class="stat-label">Campos cadastrados</span>
+        </div>
+        <div class="stat-group">
+          <span class="stat-number teal">200</span>
+          <img src="img/plus-87.png" alt="Mais" class="stat-plus" />
+          <span class="stat-label">Goleiros cadastrados</span>
+        </div>
+        <div class="stat-group">
+          <span class="stat-number bright-green">500</span>
+          <img src="img/plus-87.png" alt="Mais" class="stat-plus" />
+        </div>
+        <span class="stat-label right">Babas cadastrados</span>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <img src="img/node-168.png" alt="Bola na Rede Footer Logo" class="footer-logo" />
+      <div class="footer-content">
+        <div class="footer-columns">
+          <div class="footer-column">
+            <h3 class="footer-title">Soluções</h3>
+            <ul role="menu">
+              <li role="menuitem"><a href="#" class="footer-link">Texto de Exemplo</a></li>
+              <li role="menuitem"><a href="#" class="footer-link">Texto de Exemplo</a></li>
+              <li role="menuitem"><a href="#" class="footer-link">Texto de Exemplo</a></li>
+              <li role="menuitem"><a href="#" class="footer-link">Texto de Exemplo</a></li>
+              <li role="menuitem"><a href="#" class="footer-link">Texto de Exemplo</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3 class="footer-title">Soluções</h3>
+            <ul role="menu">
+              <li role="menuitem"><a href="#" class="footer-link">Texto de Exemplo</a></li>
+              <li role="menuitem"><a href="#" class="footer-link">Texto de Exemplo</a></li>
+              <li role="menuitem"><a href="#" class="footer-link">Texto de Exemplo</a></li>
+              <li role="menuitem"><a href="#" class="footer-link">Texto de Exemplo</a></li>
+              <li role="menuitem"><a href="#" class="footer-link">Texto de Exemplo</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3 class="footer-title">Soluções</h3>
+            <ul role="menu">
+              <li role="menuitem"><a href="#" class="footer-link">Texto de Exemplo</a></li>
+              <li role="menuitem"><a href="#" class="footer-link">Texto de Exemplo</a></li>
+              <li role="menuitem"><a href="#" class="footer-link">Texto de Exemplo</a></li>
+              <li role="menuitem"><a href="#" class="footer-link">Texto de Exemplo</a></li>
+              <li role="menuitem"><a href="#" class="footer-link">Texto de Exemplo</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="social-section">
+          <h3 class="social-title">Acompanhe a gente</h3>
+          <div class="social-icons">
+            <img src="img/x-116.png" alt="Twitter/X" class="social-icon" />
+            <img src="img/facebook-117.png" alt="Facebook" class="social-icon" />
+            <img src="img/linkedin-118.png" alt="LinkedIn" class="social-icon" />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
