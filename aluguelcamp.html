@@ -1,0 +1,1076 @@
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bola na Rede - Aluguel de Campos de Futebol em Salvador | Quadras Esportivas</title>
+  <meta name="description" content="Encontre e alugue os melhores campos de futebol em Salvador. Arena Ondina, Inter Soccer e mais opções com avaliações, preços e localização. Reserve já!" />
+  <meta name="keywords" content="aluguel campo futebol Salvador, quadras esportivas, arena futebol, campo sintético, futebol society Salvador" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Bola na Rede - Aluguel de Campos de Futebol em Salvador" />
+  <meta property="og:description" content="Encontre e alugue os melhores campos de futebol em Salvador. Arena Ondina, Inter Soccer e mais opções com avaliações, preços e localização." />
+  
+  <style>
+    /* Reset and base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: #fefefe;
+      line-height: 1.6;
+      color: #1d1b20;
+    }
+    
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+    
+    button {
+      border: none;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    
+    /* Layout components */
+    .main-container {
+      display: flex;
+      flex-direction: column;
+      gap: 144px;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+      background-color: rgba(254, 254, 254, 0.3);
+    }
+    
+    /* Header */
+    .header {
+      width: 100%;
+      background-color: #fef7ff;
+      padding: 22px 16px;
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
+    }
+    
+    .browser-bar {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 16px;
+    }
+    
+    .nav-controls {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
+    
+    .nav-icon {
+      width: 24px;
+      height: 24px;
+    }
+    
+    .address-bar {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex: 1;
+      background-color: #f3edf7;
+      border-radius: 18px;
+      padding: 6px;
+    }
+    
+    .address-content {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex: 1;
+      margin-left: 8px;
+    }
+    
+    .lock-icon {
+      width: 14px;
+      height: 14px;
+    }
+    
+    .url-text {
+      font-size: 16px;
+      font-family: Roboto, sans-serif;
+      font-weight: 400;
+      line-height: 19px;
+      color: #1d1b20;
+      margin-left: 8px;
+    }
+    
+    .star-icon {
+      width: 20px;
+      height: 20px;
+    }
+    
+    .user-avatar {
+      width: 28px;
+      height: 28px;
+      background-color: #79747e;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      color: #ffffff;
+      font-weight: 400;
+    }
+    
+    .menu-icon {
+      width: 24px;
+      height: 24px;
+    }
+    
+    .site-header {
+      background-color: #0b7726;
+      padding: 4px 94px;
+      margin: 4px 40px 0 0;
+    }
+    
+    .site-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+    
+    .logo {
+      width: 60px;
+      height: 60px;
+      border-radius: 20px;
+      margin-left: 82px;
+    }
+    
+    .hamburger {
+      width: 66px;
+      height: 66px;
+    }
+    
+    /* Search Section */
+    .search-section {
+      width: 100%;
+      padding: 0 44px 0 44px;
+      margin-right: 102px;
+    }
+    
+    .search-container {
+      display: flex;
+      flex-direction: column;
+      gap: 62px;
+      width: 100%;
+    }
+    
+    .search-filters {
+      display: flex;
+      flex-direction: column;
+      gap: 58px;
+      width: 100%;
+      margin-left: 44px;
+    }
+    
+    .filter-row {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 100%;
+      gap: 32px;
+    }
+    
+    .location-filter {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      max-width: 456px;
+      background-color: #d9d9d9;
+      border-radius: 10px;
+      padding: 18px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+    
+    .location-icon {
+      width: 56px;
+      height: 40px;
+    }
+    
+    .location-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex: 1;
+      padding: 0 42px;
+      margin-bottom: 4px;
+    }
+    
+    .location-text {
+      font-size: 16px;
+      font-family: Inter, sans-serif;
+      font-weight: 400;
+      line-height: 20px;
+      color: #000000;
+      margin-left: 24px;
+    }
+    
+    .close-x {
+      font-size: 20px;
+      font-family: Inter, sans-serif;
+      font-weight: 700;
+      line-height: 25px;
+      color: #000000;
+    }
+    
+    .time-filter {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      width: 100%;
+      max-width: 456px;
+      background-color: #d9d9d9;
+      border-radius: 10px;
+      padding: 22px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+    
+    .time-text {
+      font-size: 16px;
+      font-family: Inter, sans-serif;
+      font-weight: 400;
+      line-height: 20px;
+      color: #000000;
+      margin-left: 90px;
+    }
+    
+    .search-button {
+      background-color: #0b7726;
+      color: #ffffff;
+      font-size: 20px;
+      font-family: Inter, sans-serif;
+      font-weight: 700;
+      line-height: 25px;
+      border-radius: 10px;
+      padding: 8px 34px 8px 80px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      margin-top: 6px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      position: relative;
+    }
+    
+    .search-icon {
+      width: 56px;
+      height: 40px;
+      position: absolute;
+      left: 8px;
+    }
+    
+    .sort-filter {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      background-color: #d9d9d9;
+      border-radius: 20px;
+      padding: 6px 18px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      margin-left: 56px;
+      width: fit-content;
+    }
+    
+    .sort-icon {
+      width: 50px;
+      height: 34px;
+    }
+    
+    .sort-text {
+      font-size: 13px;
+      font-family: Inter, sans-serif;
+      font-weight: 400;
+      line-height: 16px;
+      color: #000000;
+      margin-bottom: 4px;
+    }
+    
+    /* Venue Listings */
+    .venue-listings {
+      display: flex;
+      flex-direction: column;
+      gap: 44px;
+      width: 100%;
+    }
+    
+    .venue-card {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+      gap: 20px;
+    }
+    
+    .venue-image {
+      width: 46%;
+      max-width: 596px;
+      height: 414px;
+      border-radius: 78px;
+      object-fit: cover;
+    }
+    
+    .venue-info {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      flex: 1;
+    }
+    
+    .venue-details {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 92%;
+    }
+    
+    .venue-title {
+      font-size: 30px;
+      font-family: Inter, sans-serif;
+      font-weight: 700;
+      line-height: 37px;
+      color: #0b7726;
+    }
+    
+    .rating-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      margin-top: -4px;
+    }
+    
+    .rating-stars {
+      display: flex;
+      gap: 4px;
+    }
+    
+    .star {
+      width: 20px;
+      height: 20px;
+      color: #ffd700;
+    }
+    
+    .rating-count {
+      font-size: 15px;
+      font-family: Inter, sans-serif;
+      font-weight: 700;
+      line-height: 19px;
+      color: #78a55a;
+    }
+    
+    .location-row {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 100%;
+    }
+    
+    .location-info {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex: 1;
+    }
+    
+    .location-name {
+      font-size: 15px;
+      font-family: Inter, sans-serif;
+      font-weight: 700;
+      line-height: 19px;
+      color: #75a359;
+    }
+    
+    .map-link {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      margin-left: 20px;
+    }
+    
+    .map-text {
+      font-size: 15px;
+      font-family: Inter, sans-serif;
+      font-weight: 700;
+      line-height: 19px;
+      color: #78a55a;
+    }
+    
+    .distance-text {
+      font-size: 15px;
+      font-family: Inter, sans-serif;
+      font-weight: 700;
+      line-height: 19px;
+      color: #78a55a;
+      margin-left: 28px;
+    }
+    
+    .price-button {
+      background-color: #0b7726;
+      color: #ffffff;
+      font-size: 20px;
+      font-family: Inter, sans-serif;
+      font-weight: 700;
+      line-height: 25px;
+      border-radius: 10px;
+      padding: 2px 34px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      align-self: center;
+    }
+    
+    .field-type {
+      font-size: 15px;
+      font-family: Inter, sans-serif;
+      font-weight: 700;
+      line-height: 19px;
+      color: #78a55a;
+      margin: 10px 0 10px 42px;
+    }
+    
+    .venue-description {
+      font-size: 15px;
+      font-family: Inter, sans-serif;
+      font-weight: 700;
+      line-height: 24px;
+      color: #78a55a;
+      margin-top: 10px;
+    }
+    
+    .venue-description.width-74 {
+      width: 74%;
+    }
+    
+    .venue-description.width-80 {
+      width: 80%;
+    }
+    
+    .venue-description.width-84 {
+      width: 84%;
+    }
+    
+    /* Footer */
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 100%;
+      padding: 0 88px 34px 88px;
+      margin-right: 82px;
+    }
+    
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 68%;
+      margin-top: 4px;
+    }
+    
+    .footer-logo {
+      width: 86px;
+      height: 86px;
+      border-radius: 20px;
+      margin-top: 38px;
+    }
+    
+    .footer-links {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 82%;
+    }
+    
+    .footer-column {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+    
+    .footer-column.width-40 {
+      width: 40%;
+    }
+    
+    .footer-title {
+      font-size: 18px;
+      font-family: Inter, sans-serif;
+      font-weight: 700;
+      line-height: 22px;
+      color: #000000;
+    }
+    
+    .footer-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      justify-content: flex-start;
+      align-items: center;
+      list-style: none;
+    }
+    
+    .footer-link {
+      font-size: 16px;
+      font-family: Inter, sans-serif;
+      font-weight: 400;
+      line-height: 20px;
+      color: rgba(0, 0, 0, 0.8);
+      text-decoration: none;
+    }
+    
+    .footer-link:hover {
+      color: #0b7726;
+      text-decoration: underline;
+    }
+    
+    .social-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+    
+    .social-title {
+      font-size: 30px;
+      font-family: Inter, sans-serif;
+      font-weight: 700;
+      line-height: 37px;
+      color: #000000;
+    }
+    
+    .social-icons {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-top: -2px;
+      margin-right: 14px;
+    }
+    
+    .social-icon {
+      width: 64px;
+      height: 42px;
+    }
+    
+    .social-icon:not(:first-child) {
+      margin-left: 34px;
+    }
+    
+    .social-icon:last-child {
+      margin-left: 48px;
+    }
+    
+    /* Interactive states */
+    .search-button:hover {
+      background-color: #0a6b22;
+      transform: translateY(-2px);
+    }
+    
+    .price-button:hover {
+      background-color: #0a6b22;
+      transform: translateY(-2px);
+    }
+    
+    button {
+      transition: all 0.3s ease-in-out;
+    }
+    
+    .venue-card:hover {
+      transform: translateY(-4px);
+    }
+    
+    .venue-card {
+      transition: transform 0.3s ease-in-out;
+    }
+    
+    /* Responsive media queries */
+    @media (max-width: 639px) {
+      .main-container {
+        gap: 72px;
+      }
+      
+      .header {
+        padding: 16px 8px;
+      }
+      
+      .site-header {
+        padding: 4px 16px;
+        margin: 4px 8px 0 0;
+      }
+      
+      .logo {
+        width: 40px;
+        height: 40px;
+        margin-left: 16px;
+      }
+      
+      .hamburger {
+        width: 44px;
+        height: 44px;
+      }
+      
+      .search-section {
+        padding: 0 16px;
+        margin-right: 16px;
+      }
+      
+      .search-filters {
+        margin-left: 0;
+      }
+      
+      .filter-row {
+        flex-direction: column;
+        gap: 16px;
+      }
+      
+      .location-filter,
+      .time-filter {
+        max-width: 100%;
+      }
+      
+      .search-button {
+        font-size: 16px;
+        padding: 8px 24px 8px 60px;
+      }
+      
+      .search-icon {
+        width: 40px;
+        height: 28px;
+      }
+      
+      .venue-card {
+        flex-direction: column;
+        gap: 16px;
+      }
+      
+      .venue-image {
+        width: 100%;
+        height: 250px;
+      }
+      
+      .venue-info {
+        align-items: flex-start;
+      }
+      
+      .venue-details {
+        width: 100%;
+      }
+      
+      .venue-title {
+        font-size: 24px;
+        line-height: 30px;
+      }
+      
+      .location-row {
+        flex-direction: column;
+        gap: 8px;
+      }
+      
+      .location-info {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+      }
+      
+      .map-link {
+        margin-left: 0;
+      }
+      
+      .distance-text {
+        margin-left: 0;
+      }
+      
+      .price-button {
+        margin-top: 8px;
+      }
+      
+      .venue-description.width-74,
+      .venue-description.width-80,
+      .venue-description.width-84 {
+        width: 100%;
+      }
+      
+      .footer {
+        flex-direction: column;
+        gap: 32px;
+        padding: 0 16px 24px 16px;
+        margin-right: 0;
+      }
+      
+      .footer-content {
+        flex-direction: column;
+        width: 100%;
+        gap: 24px;
+      }
+      
+      .footer-links {
+        flex-direction: column;
+        width: 100%;
+        gap: 24px;
+      }
+      
+      .footer-column.width-40 {
+        width: 100%;
+      }
+      
+      .social-section {
+        width: 100%;
+      }
+      
+      .social-title {
+        font-size: 24px;
+        line-height: 30px;
+      }
+      
+      .social-icons {
+        justify-content: flex-start;
+        gap: 16px;
+      }
+      
+      .social-icon:not(:first-child) {
+        margin-left: 0;
+      }
+      
+      .social-icon:last-child {
+        margin-left: 0;
+      }
+    }
+    
+    @media (min-width: 640px) {
+      .venue-description.width-74 {
+        width: 85%;
+      }
+      
+      .venue-description.width-80 {
+        width: 90%;
+      }
+      
+      .venue-description.width-84 {
+        width: 95%;
+      }
+    }
+    
+    @media (min-width: 768px) {
+      .search-filters {
+        margin-left: 22px;
+      }
+      
+      .filter-row {
+        flex-direction: row;
+        gap: 24px;
+      }
+      
+      .venue-card {
+        flex-direction: row;
+        gap: 20px;
+      }
+      
+      .venue-image {
+        width: 46%;
+        height: 300px;
+      }
+      
+      .location-row {
+        flex-direction: row;
+        gap: 0;
+      }
+      
+      .location-info {
+        flex-direction: row;
+        align-items: center;
+        gap: 0;
+      }
+      
+      .map-link {
+        margin-left: 20px;
+      }
+      
+      .distance-text {
+        margin-left: 28px;
+      }
+      
+      .footer {
+        flex-direction: row;
+        padding: 0 44px 34px 44px;
+      }
+      
+      .footer-content {
+        flex-direction: row;
+        width: 68%;
+        gap: 0;
+      }
+      
+      .footer-links {
+        flex-direction: row;
+        width: 82%;
+        gap: 0;
+      }
+      
+      .footer-column.width-40 {
+        width: 40%;
+      }
+    }
+    
+    @media (min-width: 1024px) {
+      .main-container {
+        gap: 144px;
+      }
+      
+      .search-section {
+        padding: 0 44px;
+        margin-right: 102px;
+      }
+      
+      .search-filters {
+        margin-left: 44px;
+      }
+      
+      .filter-row {
+        gap: 32px;
+      }
+      
+      .venue-image {
+        height: 414px;
+      }
+      
+      .venue-title {
+        font-size: 30px;
+        line-height: 37px;
+      }
+      
+      .venue-description.width-74 {
+        width: 74%;
+      }
+      
+      .venue-description.width-80 {
+        width: 80%;
+      }
+      
+      .venue-description.width-84 {
+        width: 84%;
+      }
+      
+      .footer {
+        padding: 0 88px 34px 88px;
+        margin-right: 82px;
+      }
+      
+      .social-title {
+        font-size: 30px;
+        line-height: 37px;
+      }
+      
+      .social-icons {
+        gap: 0;
+      }
+      
+      .social-icon:not(:first-child) {
+        margin-left: 34px;
+      }
+      
+      .social-icon:last-child {
+        margin-left: 48px;
+      }
+    }
+  </style>
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fjoaosapp9673back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body>
+  <main class="main-container">
+    <header class="header">
+      
+      <div class="site-header">
+        <nav class="site-nav">
+          <img src="img/node-168.png" alt="Bola na Rede Logo" class="logo" />
+          <img src="img/ic_round-menu.svg" alt="Menu" class="hamburger" />
+        </nav>
+      </div>
+    </header>
+
+    <section class="search-section">
+      <div class="search-container">
+        <div class="search-filters">
+          <div class="filter-row">
+            <div class="location-filter">
+              <img src="img/address-64.png" alt="Localização" class="location-icon" />
+              <div class="location-content">
+                <span class="location-text">ONDINA - SALVADOR</span>
+                <span class="close-x">x</span>
+              </div>
+            </div>
+            
+            <div class="time-filter">
+              <span class="time-text">DIAS E HORAS DISPONÍVEIS</span>
+              <img src="img/Schedule.svg" alt="Horario" class="location-icon" />
+              <span class="close-x">x</span>
+            </div>
+            
+            <button class="search-button">
+              <img src="img/Search.svg" alt="Pesquisar" class="search-icon" />
+              PESQUISAR
+            </button>
+          </div>
+          
+          <div class="sort-filter">
+            <img src="img/Sorting Arrows.svg" alt="Ordenar" class="sort-icon" />
+            <span class="sort-text">ORDENAR POR: NOSSAS PRINCIPAIS ESCOLHAS</span>
+          </div>
+        </div>
+
+        <div class="venue-listings">
+          <article class="venue-card">
+            <img src="img/Rectangle 18.svg" alt="Arena Ondina - Campo de futebol com vista da cidade" class="venue-image" />
+            <div class="venue-info">
+              <div class="venue-details">
+                <h2 class="venue-title">ARENA ONDINA</h2>
+                <div class="rating-row">
+                  <div class="rating-stars">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                  </div>
+                  <span class="rating-count">10.00 avaliações</span>
+                </div>
+                <div class="location-row">
+                  <div class="location-info">
+                    <span class="location-name">Odina - Salvador</span>
+                    <div class="map-link">
+                      <span class="map-text">Mostrar no mapa</span>
+                    </div>
+                    <span class="distance-text">8,5 km de você</span>
+                  </div>
+                  <button class="price-button">Preço</button>
+                </div>
+                <div class="field-type">Natural</div>
+                <p class="venue-description width-74">Com mais de 10.000 avaliações positivas, a Arena Ondina é o lugar ideal para quem busca qualidade, conforto e estrutura na hora de jogar. Localizada em Ondina – Salvador, a arena conta com campo sintético de alto padrão, perfeito para partidas entre amigos, treinos ou campeonatos.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="venue-card">
+            <img src="img/Rectangle 17.svg" alt="Inter Soccer - Campo de futebol society" class="venue-image" />
+            <div class="venue-info">
+              <div class="venue-details">
+                <h2 class="venue-title">INTER SOCCER</h2>
+                <div class="rating-row">
+                  <div class="rating-stars">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">☆</span>
+                  </div>
+                  <span class="rating-count">3.000 avaliações</span>
+                </div>
+                <div class="location-row">
+                  <div class="location-info">
+                    <span class="location-name">Pau da lima - Salvador</span>
+                    <div class="map-link">
+                      <span class="map-text">Mostrar no mapa</span>
+                    </div>
+                    <span class="distance-text">3,2 km de você</span>
+                  </div>
+                  <button class="price-button">Preço</button>
+                </div>
+                <div class="field-type">Sintético</div>
+                <p class="venue-description width-80">Com mais de 3.000 avaliações positivas, o Inter Soccer, localizado em Pau da Lima – Salvador, é o destino certo para quem gosta do futebol de verdade, jogado no barro, com raça e paixão.<br />Aqui, o clima é de comunidade, rivalidade saudável e muita bola rolando. Ideal para aquele jogo entre amigos, peladas clássicas ou até competições amadoras que ficam na memória.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="venue-card">
+            <img src="img/Rectangle 19.svg" alt="Beira Lixo - Campo de areia tradicional" class="venue-image" />
+            <div class="venue-info">
+              <div class="venue-details">
+                <h2 class="venue-title">BEIRA LIXO</h2>
+                <div class="rating-row">
+                  <div class="rating-stars">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">☆</span>
+                  </div>
+                  <span class="rating-count">100 avaliações</span>
+                </div>
+                <div class="location-row">
+                  <span class="location-name">São cristovão - Salvador</span>
+                  <span class="map-text">Mostrar no mapa</span>
+                  <span class="distance-text">8,5 km de você</span>
+                  <button class="price-button">Preço</button>
+                </div>
+                <div class="field-type">Areia</div>
+                <p class="venue-description width-84">Com cerca de 100 avaliações, o Beira Lixo, em São Cristóvão – Salvador, é aquele campo clássico de areia que respira futebol raiz. Aqui, não tem frescura — tem paixão, raça e muita resenha boa!<br />Perfeito para quem curte bater bola com os amigos, fazer aquele rachão de respeito ou simplesmente reviver os tempos de infância jogando descalço na areia.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <img src="img/node-168.png" alt="Bola na Rede Logo" class="footer-logo" />
+        <div class="footer-links">
+          <div class="footer-column width-40">
+            <h3 class="footer-title">Soluções</h3>
+            <ul class="footer-list">
+              <li><a href="#" class="footer-link">Texto de Exemplo</a></li>
+              <li><a href="#" class="footer-link">Texto de Exemplo</a></li>
+              <li><a href="#" class="footer-link">Texto de Exemplo</a></li>
+              <li><a href="#" class="footer-link">Texto de Exemplo</a></li>
+              <li><a href="#" class="footer-link">Texto de Exemplo</a></li>
+            </ul>
+          </div>
+          <div class="footer-column width-40">
+            <h3 class="footer-title">Soluções</h3>
+            <ul class="footer-list">
+              <li><a href="#" class="footer-link">Texto de Exemplo</a></li>
+              <li><a href="#" class="footer-link">Texto de Exemplo</a></li>
+              <li><a href="#" class="footer-link">Texto de Exemplo</a></li>
+              <li><a href="#" class="footer-link">Texto de Exemplo</a></li>
+              <li><a href="#" class="footer-link">Texto de Exemplo</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3 class="footer-title">Soluções</h3>
+            <ul class="footer-list">
+              <li><a href="#" class="footer-link">Texto de Exemplo</a></li>
+              <li><a href="#" class="footer-link">Texto de Exemplo</a></li>
+              <li><a href="#" class="footer-link">Texto de Exemplo</a></li>
+              <li><a href="#" class="footer-link">Texto de Exemplo</a></li>
+              <li><a href="#" class="footer-link">Texto de Exemplo</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="social-section">
+        <h3 class="social-title">Acompanhe a gente</h3>
+        <div class="social-icons">
+          <img src="img/x-116.png" alt="Twitter/X" class="social-icon" />
+          <img src="img/facebook-117.png" alt="Facebook" class="social-icon" />
+          <img src="img/linkedin-118.png" alt="LinkedIn" class="social-icon" />
+        </div>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
