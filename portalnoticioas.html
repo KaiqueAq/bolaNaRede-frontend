@@ -46,7 +46,6 @@
       flex-direction: column;
       align-items: center;
       width: 100%;
-      max-width: 1440px;
       margin: 0 auto;
     }
     
@@ -679,9 +678,68 @@
       .news-portal-header {
         padding: 30px 170px;
       }
-      
+
       .hero-section {
         padding: 0 94px;
+      }
+    }
+
+    .announcement-banner {
+      background-color: #272933;
+      border-radius: 20px;
+      padding: 32px 24px;
+      margin: 32px 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 24px;
+    }
+
+    .announcement-text {
+      color: #ffffff;
+    }
+
+    .announcement-title {
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+
+    .announcement-subtitle {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    .announcement-icon {
+      width: 152px;
+      height: 80px;
+    }
+
+    @media (min-width: 640px) {
+      .announcement-link {
+        text-decoration: none;
+        display: flex;
+      }
+
+          .announcement-banner {
+        width: -webkit-fill-available;
+        flex-direction: row;
+        text-align: left;
+        padding: 40px;
+        margin: 40px 24px;
+        text-decoration: none;
+        justify-content: center;
+    }
+
+      .announcement-title {
+        font-size: 36px;
+      }
+
+      .announcement-subtitle {
+        font-size: 28px;
       }
     }
   </style>
@@ -700,15 +758,16 @@
         </div>
       </header>
 
-      <!-- Hero Section -->
-      <section class="hero-section">
-        <div class="hero-container">
-          <div class="hero-content">
-            <h1 class="hero-title">ANUNCIANTE? DIVULGUE AQUI!</h1>
-            <p class="hero-subtitle">CAMPEONATOS, PENEIRAS E PRODUTOS</p>
+     
+
+      <section class="announcement-banner">
+        <a href="anuncio.html" class="announcement-link">
+          <div class="announcement-text">
+            <h2 class="announcement-title">ANUNCIANTE? DIVULGUE AQUI!</h2>
+            <p class="announcement-subtitle">CAMPEONATOS, PENEIRAS E PRODUTOS</p>
           </div>
-          <img src="img/vector-34.svg" alt="Megafone para anúncios" class="hero-icon" />
-        </div>
+          <img src="img/vector-34.svg" alt="Ícone de megafone" class="announcement-icon" />
+        </a>
       </section>
 
       <!-- News Portal Header -->

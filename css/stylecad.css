@@ -105,6 +105,66 @@
     }
 
     /* Header section */
+    .main-header {
+  background-color: #fffffe;
+  padding: 6px 4vw;
+    }
+    
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .logo-section {
+      display: flex;
+      align-items: center;
+      gap: 38px;
+    }
+    
+    .logo {
+      width: 60px;
+      height: 60px;
+      border-radius: 20px;
+    }
+    
+    .location-info {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    
+    .location-text {
+      font-size: 15px;
+      font-weight: 700;
+      color: #78a55a;
+    }
+    
+    .location-subtext {
+      font-size: 14px;
+      font-weight: 700;
+      color: #000000;
+    }
+    
+    .nav-menu {
+      display: flex;
+      gap: 66px;
+      align-items: center;
+    }
+    
+    .nav-item {
+      font-size: 16px;
+      font-weight: 700;
+      color: #000000;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    
+    .nav-item:hover {
+      color: #14ae5c;
+    }
     .site-header {
       background-color: #fffffe;
       padding: 68px 32px;
@@ -114,11 +174,8 @@
     .header-content {
       display: flex;
       justify-content: space-between;
-      align-items: flex-start;
-      width: 100%;
-      max-width: 1400px;
-      margin: 0 auto;
-      padding: 0 156px;
+      align-items: center;
+     
     }
 
     .logo-section {

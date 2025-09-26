@@ -1,0 +1,662 @@
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anuncie no Bola na Rede | Publicidade para Amantes do Futebol</title>
+  <meta name="description" content="Anuncie no Bola na Rede e alcance milhares de amantes do futebol. Oferecemos banner topo, anúncios laterais e dentro das notícias. Entre em contato e faça sua marca crescer no mundo esportivo." />
+  <meta name="keywords" content="publicidade futebol, anúncios esportivos, marketing esportivo, bola na rede, advertising futebol" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Anuncie no Bola na Rede | Publicidade para Amantes do Futebol" />
+  <meta property="og:description" content="Anuncie no Bola na Rede e alcance milhares de amantes do futebol. Oferecemos banner topo, anúncios laterais e dentro das notícias." />
+
+  <style>
+    /* Reset and base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.6;
+      color: #000000;
+      background-color: #fefefe;
+      background-image: url('img/rectangle-19-49.png');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    /* Layout components */
+    .main-container {
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: rgba(254, 254, 254, 0.3);
+    }
+
+    .content-wrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Header styles */
+    .site-header {
+      width: 100%;
+      background-color: #0b7726;
+      padding: 0 22px;
+      height: 76px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1;
+    }
+
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+
+    .logo {
+      width: 60px;
+      height: 60px;
+      border-radius: 20px;
+      margin-left: 138px;
+    }
+
+    .hamburger-menu {
+      width: 66px;
+      height: 66px;
+    }
+
+    /* Main content */
+    .main-content {
+      width: 100%;
+      padding: 28px;
+      margin-top: -22px;
+      background-color: #fffffe;
+      margin-right: 10px;
+    }
+
+    .hero-section {
+      text-align: center;
+      margin-bottom: 74px;
+    }
+
+    .hero-title {
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 1.2;
+      color: #000000;
+      margin-bottom: 32px;
+    }
+
+    .hero-subtitle {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 1.2;
+      color: #000000;
+      margin-bottom: 48px;
+    }
+
+    .hero-description {
+      font-size: 18px;
+      font-weight: 300;
+      font-style: italic;
+      line-height: 1.2;
+      color: #000000;
+      margin-bottom: 68px;
+      width: 94%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Advertising options */
+    .advertising-options {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      width: 100%;
+      margin-bottom: 68px;
+    }
+
+    .ad-card {
+      background-color: #ffffff;
+      border: 1px solid #000000;
+      border-radius: 20px;
+      padding: 42px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 28px;
+      width: 100%;
+      max-width: 334px;
+      margin: 0 auto;
+    }
+
+    .ad-preview {
+      background-color: #d9d9d9;
+    }
+
+    .banner-preview {
+      width: 188px;
+      height: 114px;
+    }
+
+    .lateral-preview {
+      width: 88px;
+      height: 146px;
+    }
+
+    .news-preview-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
+    .news-preview-header {
+      width: 256px;
+      height: 26px;
+      background-color: #d9d9d9;
+      margin-bottom: 16px;
+    }
+
+    .news-preview-content {
+      display: flex;
+      gap: 26px;
+      width: 100%;
+    }
+
+    .news-preview-left {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      flex: 1;
+    }
+
+    .news-preview-text {
+      width: 138px;
+      height: 26px;
+      background-color: #d9d9d9;
+    }
+
+    .news-preview-right {
+      width: 78px;
+      height: 70px;
+      background-color: #d9d9d9;
+    }
+
+    .ad-title {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 1.2;
+      color: #000000;
+      text-align: center;
+    }
+
+    /* Contact form */
+    .contact-section {
+      background-color: #f5f5f5;
+      padding: 44px;
+      width: 96%;
+      margin: 0 auto;
+    }
+
+    .contact-title {
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 1.2;
+      color: #000000;
+      margin-bottom: 78px;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      width: 100%;
+    }
+
+    .form-row {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+
+    .form-input {
+      background-color: #ffffff;
+      border: none;
+      border-radius: 20px;
+      padding: 24px 36px;
+      font-size: 20px;
+      font-weight: 700;
+      color: rgba(0, 0, 0, 0.2);
+      outline: none;
+      width: 100%;
+    }
+
+    .form-textarea {
+      background-color: #ffffff;
+      border: none;
+      border-radius: 20px;
+      padding: 26px 36px 12px 36px;
+      font-size: 20px;
+      font-weight: 700;
+      color: rgba(0, 0, 0, 0.2);
+      outline: none;
+      width: 100%;
+      min-height: 120px;
+      resize: vertical;
+      font-family: inherit;
+    }
+
+    .form-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+      margin-top: 30px;
+    }
+
+    .btn-primary {
+      background-color: #0b7726;
+      color: #ffffff;
+      border: none;
+      border-radius: 20px;
+      padding: 12px 34px;
+      font-size: 20px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .btn-primary:hover {
+      background-color: #0a6622;
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      background-color: #d9d9d9;
+      color: rgba(0, 0, 0, 0.6);
+      border: none;
+      border-radius: 18px;
+      padding: 4px 22px 4px 44px;
+      font-size: 20px;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: all 0.3s ease;
+    }
+
+    .btn-secondary:hover {
+      background-color: #c9c9c9;
+    }
+
+    .whatsapp-icon {
+      width: 20px;
+      height: 20px;
+    }
+
+    /* Footer */
+    .site-footer {
+      width: 100%;
+      padding: 42px 56px;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      align-items: flex-start;
+    }
+
+    .footer-logo {
+      width: 86px;
+      height: 86px;
+      border-radius: 20px;
+    }
+
+    .footer-content {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      width: 100%;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    .footer-column {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .footer-column-title {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1.2;
+      color: #000000;
+      margin-bottom: 8px;
+    }
+
+    .footer-link {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.25;
+      color: rgba(0, 0, 0, 0.8);
+      text-decoration: none;
+      margin-bottom: 8px;
+      transition: color 0.3s ease;
+    }
+
+    .footer-link:hover {
+      color: #0b7726;
+    }
+
+    .social-section {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .social-title {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 1.2;
+      color: #000000;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 34px;
+      align-items: center;
+    }
+
+    .social-icon {
+      width: 64px;
+      height: 42px;
+      transition: transform 0.3s ease;
+    }
+
+    .social-icon:hover {
+      transform: scale(1.1);
+    }
+
+    /* Interactive states */
+    .form-input:focus,
+    .form-textarea:focus {
+      box-shadow: 0 0 0 2px #0b7726;
+    }
+
+    .ad-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    /* Responsive media queries */
+    @media (min-width: 640px) {
+      .hero-title {
+        font-size: 64px;
+      }
+
+      .hero-subtitle {
+        font-size: 24px;
+      }
+
+      .hero-description {
+        font-size: 22px;
+      }
+
+      .advertising-options {
+        flex-direction: row;
+        gap: 48px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .form-row {
+        flex-direction: row;
+      }
+
+      .form-actions {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .footer-links {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+
+      .logo {
+        margin-left: 100px;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .hero-title {
+        font-size: 80px;
+      }
+
+      .hero-subtitle {
+        font-size: 28px;
+      }
+
+      .hero-description {
+        font-size: 26px;
+      }
+
+      .contact-title {
+        font-size: 40px;
+      }
+
+      .ad-title {
+        font-size: 28px;
+      }
+
+      .social-title {
+        font-size: 28px;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .hero-title {
+        font-size: 96px;
+      }
+
+      .hero-subtitle {
+        font-size: 34px;
+      }
+
+      .hero-description {
+        font-size: 36px;
+      }
+
+      .advertising-options {
+        flex-wrap: nowrap;
+        gap: 146px;
+      }
+
+      .contact-title {
+        font-size: 50px;
+      }
+
+      .ad-title {
+        font-size: 36px;
+      }
+
+      .social-title {
+        font-size: 30px;
+      }
+
+      .site-footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+
+      .footer-content {
+        width: auto;
+      }
+
+      .logo {
+        margin-left: 138px;
+      }
+    }
+
+    /* Mobile-first hamburger menu */
+    .hamburger {
+      display: block;
+    }
+
+    @media (min-width: 1024px) {
+      .hamburger {
+        display: none;
+      }
+    }
+  </style>
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fgabriels1829back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body>
+  <div class="main-container">
+    <div class="content-wrapper">
+      <header class="site-header">
+        <div class="header-content">
+          <img src="img/node-168.png" alt="Bola na Rede Logo" class="logo" />
+          <img src="img/ic_round-menu.svg" alt="Menu" class="hamburger-menu" />
+        </div>
+      </header>
+
+      <main class="main-content">
+        <section class="hero-section">
+          <h1 class="hero-title">Anuncie no nosso site</h1>
+          <p class="hero-subtitle">Quer mostra sua marca para aos amantes de futebol ?</p>
+          <p class="hero-description">
+            anuncie no nosso site, você alcança um público<br />
+            altamente engajado, interessados em conteúdos<br />
+            relacionados ao esporte.
+          </p>
+        </section>
+
+        <section class="advertising-options">
+          <article class="ad-card">
+            <div class="ad-preview banner-preview"></div>
+            <h2 class="ad-title">Banner topo</h2>
+          </article>
+
+          <article class="ad-card">
+            <div class="ad-preview lateral-preview"></div>
+            <h2 class="ad-title">Anúncio lateral</h2>
+          </article>
+
+          <article class="ad-card">
+            <div class="news-preview-container">
+              <div class="news-preview-header"></div>
+              <div class="news-preview-content">
+                <div class="news-preview-left">
+                  <div class="news-preview-text"></div>
+                  <div class="news-preview-text"></div>
+                </div>
+                <div class="news-preview-right"></div>
+              </div>
+            </div>
+            <h2 class="ad-title">Anúncio dentro<br />das notícias</h2>
+          </article>
+        </section>
+
+        <section class="contact-section">
+          <h2 class="contact-title">Entre em contato</h2>
+          <form class="contact-form">
+            <div class="form-row">
+              <input type="text" class="form-input" placeholder="Nome" required />
+              <input type="text" class="form-input" placeholder="Empresa" required />
+            </div>
+            <div class="form-row">
+              <input type="email" class="form-input" placeholder="E-mail" required />
+              <input type="tel" class="form-input" placeholder="WhatsApp" required />
+            </div>
+            <textarea class="form-textarea" placeholder="Mensagem" required></textarea>
+            <div class="form-actions">
+              <button type="submit" class="btn-primary">Quero Anunciar</button>
+              <button type="button" class="btn-secondary">
+                <img src="img/whatsapp.png" alt="WhatsApp" class="whatsapp-icon" />
+                Fale conosco
+              </button>
+            </div>
+          </form>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <img src="img/node-168.png" alt="Bola na Rede Logo" class="footer-logo" />
+        
+        <div class="footer-content">
+          <div class="footer-links">
+            <div class="footer-column">
+              <h3 class="footer-column-title">Soluções</h3>
+              <ul>
+                <li><a href="#" class="footer-link">Texto de Exemplo</a></li>
+                <li><a href="#" class="footer-link">Texto de Exemplo</a></li>
+                <li><a href="#" class="footer-link">Texto de Exemplo</a></li>
+                <li><a href="#" class="footer-link">Texto de Exemplo</a></li>
+                <li><a href="#" class="footer-link">Texto de Exemplo</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-column">
+              <h3 class="footer-column-title">Soluções</h3>
+              <ul>
+                <li><a href="#" class="footer-link">Texto de Exemplo</a></li>
+                <li><a href="#" class="footer-link">Texto de Exemplo</a></li>
+                <li><a href="#" class="footer-link">Texto de Exemplo</a></li>
+                <li><a href="#" class="footer-link">Texto de Exemplo</a></li>
+                <li><a href="#" class="footer-link">Texto de Exemplo</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-column">
+              <h3 class="footer-column-title">Soluções</h3>
+              <ul>
+                <li><a href="#" class="footer-link">Texto de Exemplo</a></li>
+                <li><a href="#" class="footer-link">Texto de Exemplo</a></li>
+                <li><a href="#" class="footer-link">Texto de Exemplo</a></li>
+                <li><a href="#" class="footer-link">Texto de Exemplo</a></li>
+                <li><a href="#" class="footer-link">Texto de Exemplo</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="social-section">
+            <h3 class="social-title">Acompanhe a gente</h3>
+            <div class="social-icons">
+              <img src="img/x-116.png" alt="Twitter/X" class="social-icon" />
+              <img src="img/facebook-117.png" alt="Facebook" class="social-icon" />
+              <img src="img/linkedin-118.png" alt="LinkedIn" class="social-icon" />
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>

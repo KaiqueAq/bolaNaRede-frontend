@@ -32,38 +32,36 @@
   <body>
     <main class="main-container">
       <!-- Site Header -->
-      <header class="site-header">
+      <header class="header">
+      <!-- Main Navigation -->
+      <div class="main-header">
         <div class="header-content">
           <div class="logo-section">
             <img src="img/node-168.png" alt="Bola na Rede Logo" class="logo" />
-            <img
-              src="img/address-64.png"
-              alt="Localização"
-              style="
-                width: 48px;
-                height: 26px;
-                margin-top: 10px;
-                margin-left: 40px;
-              "
-            />
+            <img src="img/address-62.png" alt="Localização" style="width: 48px; height: 26px; margin-top: 8px;" />
             <div class="location-info">
-              <span class="location-text">Informe sua cidade e encontre</span>
-              <select class="location-dropdown">
-                <option>um baba próximo de você</option>
-              </select>
+              <div class="location-text">Informe sua cidade e encontre</div>
+              <div style="display: flex; align-items: center; gap: 8px;">
+                <span class="location-subtext">um baba próximo de você</span>
+                <img src="img/forward-107.png" alt="Seta" style="width: 26px; height: 22px;" />
+              </div>
             </div>
           </div>
-          <nav class="main-nav">
-            <a href="#" class="nav-item">Cadastre seu Campo</a>
-            <div class="nav-dropdown">
-              <span class="nav-item">Como funciona</span>
+          
+          <nav class="nav-menu" role="navigation">
+            <a href="#" class="nav-item" role="menuitem">Cadastre seu Campo</a>
+            <div style="display: flex; align-items: center; gap: 10px;" role="menuitem" aria-haspopup="true" aria-expanded="false">
+              <a href="#" class="nav-item">Como funciona</a>
+              <img src="img/forward-107.png" alt="Dropdown" style="width: 26px; height: 22px;" />
             </div>
-            <div class="nav-dropdown">
-              <span class="nav-item">Ajuda</span>
+            <div style="display: flex; align-items: center; gap: 10px;" role="menuitem" aria-haspopup="true" aria-expanded="false">
+              <a href="#" class="nav-item">Ajuda</a>
+              <img src="img/forward-107.png" alt="Dropdown" style="width: 26px; height: 22px;" />
             </div>
           </nav>
         </div>
-      </header>
+      </div>
+    </header>
 
       <!-- Hero Section -->
       <section class="hero-section">

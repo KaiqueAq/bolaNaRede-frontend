@@ -231,8 +231,8 @@ button {
 }
 
 .announcement-icon {
-	width: 80px;
-	height: 80px;
+    width: 152px;
+    height: 80px;
 }
 
 .fields-section {
@@ -430,12 +430,17 @@ button {
 		gap: 20px;
 		padding: 40px 24px;
 	}
-  
+    .announcement-link{
+	text-decoration: none;
+	display: flex;
+	}
 	.announcement-banner {
 		flex-direction: row;
 		text-align: left;
 		padding: 40px;
 		margin: 40px 24px;
+		text-decoration: none;
+		justify-content: center
 	}
   
 	.announcement-title {
