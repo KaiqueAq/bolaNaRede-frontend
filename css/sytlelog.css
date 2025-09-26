@@ -263,13 +263,13 @@
     }
     
     .field-image {
-      position: absolute;
-      right: 0;
-      top: 0;
-      width: 838px;
-      height: 572px;
-      object-fit: cover;
-    }
+    position: absolute;
+    right: -271px;
+    top: -29px;
+    width: 766px;
+    height: 796px;
+    object-fit: cover;
+}
     
     .login-form-container {
       position: absolute;
