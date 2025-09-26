@@ -1,0 +1,829 @@
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bahia Pentacampeão Copa do Nordeste | Portal Bola na Rede</title>
+  <meta name="description" content="Bahia conquista o pentacampeonato da Copa do Nordeste com goleada de 5x0 sobre o Confiança. Cobertura completa da festa tricolor na Arena Fonte Nova." />
+  <meta name="keywords" content="Bahia, Copa do Nordeste, pentacampeão, futebol brasileiro, Arena Fonte Nova, Confiança, Tiago, Lucho Rodriguez" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Bahia Pentacampeão Copa do Nordeste | Portal Bola na Rede" />
+  <meta property="og:description" content="Bahia conquista o pentacampeonato da Copa do Nordeste com goleada de 5x0 sobre o Confiança. Cobertura completa da festa tricolor." />
+
+  <style>
+    /* Reset and base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.6;
+      color: #1d1b20;
+      background-color: #fefefe;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* Layout components */
+    .main-container {
+      width: 100%;
+      background-color: rgba(254, 254, 254, 0.3);
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      align-items: center;
+    }
+
+    .browser-header {
+      width: 100%;
+      background-color: #fef7ff;
+      padding: 22px 16px;
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
+    }
+
+    .browser-controls {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      gap: 16px;
+    }
+
+    .nav-controls {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .nav-icon {
+      width: 24px;
+      height: 24px;
+    }
+
+    .address-bar-container {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      flex: 1;
+    }
+
+    .address-bar {
+      flex: 1;
+      padding: 6px 38px 6px 38px;
+      background-color: #f3edf7;
+      border-radius: 18px;
+      border: none;
+      font-size: 16px;
+      font-family: Roboto, sans-serif;
+      color: #1d1b20;
+    }
+
+    .user-avatar {
+      width: 28px;
+      height: 28px;
+      background-color: #79747e;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: 400;
+    }
+
+    .menu-icon {
+      width: 24px;
+      height: 24px;
+    }
+
+    .site-header {
+      width: 100%;
+      background-color: #0b7726;
+      padding: 4px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .header-content {
+      width: 78%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      width: 60px;
+      height: 60px;
+      border-radius: 20px;
+    }
+
+    .hamburger-menu {
+      width: 66px;
+      height: 66px;
+    }
+
+    /* Advertisement banner */
+    .ad-banner {
+      width: 100%;
+      padding: 0 56px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .ad-content {
+      width: 92%;
+      background-color: #272933;
+      border-radius: 20px;
+      padding: 18px;
+      margin: 28px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .ad-text {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      align-self: flex-end;
+    }
+
+    .ad-title {
+      font-size: 32px;
+      font-family: Inter, sans-serif;
+      font-weight: 700;
+      line-height: 1.2;
+      color: #ffffff;
+    }
+
+    .ad-subtitle {
+      font-size: 22px;
+      font-family: Inter, sans-serif;
+      font-weight: 700;
+      line-height: 1.2;
+      color: #ffffff;
+    }
+
+    .ad-icon {
+      width: 5%;
+      margin-right: 26px;
+      margin-bottom: 16px;
+    }
+
+    /* News portal header */
+    .news-header {
+      width: 100%;
+      background-color: #0b7726;
+      padding: 36px;
+      margin-top: 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .news-title-section {
+      flex: 1;
+      padding: 0 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .news-title {
+      font-size: 42px;
+      font-family: 'Jockey One', serif;
+      font-weight: 400;
+      line-height: 1.4;
+      color: #ffffff;
+    }
+
+    .heart-icon {
+      width: 10%;
+      margin-bottom: 14px;
+      margin-left: 26px;
+      align-self: flex-end;
+    }
+
+    .divider-section {
+      width: 30%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      align-self: center;
+    }
+
+    .divider-text {
+      font-size: 52px;
+      font-family: Inter, sans-serif;
+      font-weight: 400;
+      line-height: 1.2;
+      color: #ffffff;
+      margin-left: 92px;
+    }
+
+    .portal-logo {
+      width: 38%;
+      border-radius: 20px;
+    }
+
+    /* Main article */
+    .main-article {
+      width: 100%;
+      margin-top: 56px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .article-title {
+      width: 100%;
+      margin-left: 82px;
+      overflow-x: auto;
+    }
+
+    .article-title h1 {
+      font-size: 24px;
+      font-family: Actor, sans-serif;
+      font-weight: 400;
+      line-height: 1.1;
+      color: #000000;
+      width: 100%;
+    }
+
+    .article-images {
+      width: 100%;
+      margin: 0 88px 0 88px;
+      display: flex;
+      gap: 30px;
+      align-items: flex-start;
+    }
+
+    .image-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: auto;
+    }
+
+    .image-wrapper {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      width: auto;
+    }
+
+    .celebration-image {
+      width: 74%;
+      align-self: center;
+      margin-left: -156px;
+    }
+
+    .score-overlay {
+      position: absolute;
+      top: 272px;
+      font-size: 16px;
+      font-family: Inter, sans-serif;
+      font-weight: 700;
+      line-height: 1.25;
+      color: #ffffff;
+      width: auto;
+    }
+
+    .stadium-image {
+      width: 734px;
+      margin-top: 58px;
+      margin-bottom: 48px;
+    }
+
+    /* Article content */
+    .article-content {
+      width: 100%;
+      padding: 0 56px;
+      margin-top: 62px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .content-wrapper {
+      width: 100%;
+      margin: 0 16px 0 6px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .main-text {
+      font-size: 22px;
+      font-family: Actor, sans-serif;
+      font-weight: 400;
+      line-height: 1.1;
+      letter-spacing: 1px;
+      color: #000000;
+      width: 100%;
+    }
+
+    .secondary-text {
+      font-size: 18px;
+      font-family: Actor, sans-serif;
+      font-weight: 400;
+      line-height: 1.6;
+      color: #000000;
+      width: 94%;
+      margin-top: 120px;
+    }
+
+    /* Footer */
+    .footer-section {
+      width: 100%;
+      margin-top: 240px;
+      margin-right: 16px;
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .footer-logo {
+      width: 86px;
+      height: 86px;
+      border-radius: 20px;
+      margin-top: 42px;
+    }
+
+    .footer-content {
+      flex: 1;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      align-self: center;
+    }
+
+    .footer-links {
+      margin-top: 4px;
+      margin-left: 74px;
+      display: flex;
+      gap: 158px;
+      align-self: flex-end;
+      flex: 1;
+    }
+
+    .link-column {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 134px;
+    }
+
+    .link-column h3 {
+      font-size: 18px;
+      font-family: Inter, sans-serif;
+      font-weight: 700;
+      line-height: 1.2;
+      color: #000000;
+    }
+
+    .link-column a {
+      font-size: 16px;
+      font-family: Inter, sans-serif;
+      font-weight: 400;
+      line-height: 1.25;
+      color: rgba(0, 0, 0, 0.8);
+      text-decoration: none;
+      margin-top: 8px;
+    }
+
+    .link-column a:first-of-type {
+      margin-top: 4px;
+    }
+
+    .link-column a:hover {
+      color: #0b7726;
+      text-decoration: underline;
+    }
+
+    .social-section {
+      width: 36%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    .social-content {
+      width: 72%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .social-title {
+      font-size: 24px;
+      font-family: Inter, sans-serif;
+      font-weight: 700;
+      line-height: 1.2;
+      color: #000000;
+    }
+
+    .social-icons {
+      width: 100%;
+      margin-top: -2px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .social-icons-row {
+      flex: 1;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .social-icon {
+      width: 36%;
+    }
+
+    .social-icon:nth-child(2) {
+      margin-left: 34px;
+    }
+
+    .linkedin-icon {
+      width: 22%;
+      margin-right: 14px;
+    }
+
+    /* Typography */
+    h1 {
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 1.1;
+      margin-bottom: 16px;
+    }
+
+    /* Interactive states */
+    a:hover {
+      opacity: 0.8;
+      transition: opacity 0.3s ease;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
+    }
+
+    /* Responsive media queries */
+    @media (max-width: 639px) {
+      .browser-controls {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .address-bar-container {
+        width: 100%;
+      }
+
+      .header-content {
+        width: 90%;
+      }
+
+      .ad-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 16px;
+      }
+
+      .ad-title {
+        font-size: 24px;
+      }
+
+      .ad-subtitle {
+        font-size: 18px;
+      }
+
+      .ad-icon {
+        width: 30%;
+        margin: 0 auto 16px;
+      }
+
+      .news-header {
+        flex-direction: column;
+        gap: 16px;
+        padding: 24px 16px;
+      }
+
+      .news-title {
+        font-size: 28px;
+        text-align: center;
+      }
+
+      .divider-section {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .divider-text {
+        font-size: 36px;
+        margin-left: 0;
+      }
+
+      .portal-logo {
+        width: 60px;
+      }
+
+      .article-title {
+        margin-left: 16px;
+        margin-right: 16px;
+      }
+
+      .article-title h1 {
+        font-size: 20px;
+      }
+
+      .article-images {
+        flex-direction: column;
+        margin: 0 16px;
+        gap: 16px;
+      }
+
+      .celebration-image {
+        width: 100%;
+        margin-left: 0;
+      }
+
+      .stadium-image {
+        width: 100%;
+        margin-top: 16px;
+      }
+
+      .score-overlay {
+        position: static;
+        margin-top: 16px;
+        text-align: center;
+      }
+
+      .article-content {
+        padding: 0 16px;
+      }
+
+      .main-text {
+        font-size: 18px;
+      }
+
+      .secondary-text {
+        font-size: 16px;
+        width: 100%;
+        margin-top: 32px;
+      }
+
+      .footer-section {
+        flex-direction: column;
+        margin-top: 64px;
+        margin-right: 0;
+        padding: 0 16px;
+      }
+
+      .footer-links {
+        flex-direction: column;
+        gap: 32px;
+        margin-left: 0;
+        margin-top: 32px;
+      }
+
+      .social-section {
+        width: 100%;
+        justify-content: center;
+        margin-top: 32px;
+      }
+
+      .social-content {
+        width: 100%;
+      }
+
+      .social-title {
+        font-size: 20px;
+        text-align: center;
+      }
+
+      .social-icons-row {
+        justify-content: center;
+        gap: 16px;
+      }
+
+      .social-icon:nth-child(2) {
+        margin-left: 0;
+      }
+
+      .linkedin-icon {
+        margin-right: 0;
+      }
+    }
+
+    @media (min-width: 640px) {
+      .ad-title {
+        font-size: 36px;
+      }
+
+      .ad-subtitle {
+        font-size: 24px;
+      }
+
+      .news-title {
+        font-size: 48px;
+      }
+
+      .article-title h1 {
+        font-size: 28px;
+      }
+
+      .main-text {
+        font-size: 24px;
+      }
+
+      .secondary-text {
+        font-size: 20px;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .ad-title {
+        font-size: 42px;
+      }
+
+      .ad-subtitle {
+        font-size: 28px;
+      }
+
+      .news-title {
+        font-size: 56px;
+      }
+
+      .article-title h1 {
+        font-size: 32px;
+      }
+
+      .main-text {
+        font-size: 28px;
+      }
+
+      .secondary-text {
+        font-size: 22px;
+      }
+
+      .social-title {
+        font-size: 28px;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .ad-title {
+        font-size: 50px;
+      }
+
+      .ad-subtitle {
+        font-size: 35px;
+      }
+
+      .news-title {
+        font-size: 64px;
+      }
+
+      .article-title h1 {
+        font-size: 35px;
+      }
+
+      .main-text {
+        font-size: 32px;
+      }
+
+      .secondary-text {
+        font-size: 25px;
+      }
+
+      .social-title {
+        font-size: 30px;
+      }
+    }
+  </style>
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fruansapp2870back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+
+<body>
+  <main class="main-container">
+   
+
+    <!-- Site Header -->
+    <header class="site-header">
+      <div class="header-content">
+        <img src="img/node-168.png" alt="Bola na Rede Logo" class="logo" />
+        <img src="img/ic_round-menu.svg" alt="Menu" class="hamburger-menu" />
+      </div>
+    </header>
+
+    <!-- Advertisement Banner -->
+    <section class="ad-banner">
+      <div class="ad-content">
+        <div class="ad-text">
+          <h2 class="ad-title">ANUNCIANTE? DIVULGUE AQUI!</h2>
+          <p class="ad-subtitle">CAMPEONATOS, PENEIRAS E PRODUTOS</p>
+        </div>
+        <img src="img/vector-34.svg" alt="Anúncio" class="ad-icon" />
+      </div>
+    </section>
+
+    <!-- News Portal Header -->
+    <section class="news-header">
+      <div class="news-title-section">
+        <h2 class="news-title">PORTAL DE NOTÍCIAS TIME DO</h2>
+        <img src="img/coracao branco 1.svg" alt="Coração" class="heart-icon" />
+      </div>
+      <div class="divider-section">
+        <span class="divider-text">|</span>
+        <img src="img/node-168.png" alt="Logo Portal" class="portal-logo" />
+      </div>
+    </section>
+
+    <!-- Main Article -->
+    <article class="main-article">
+      <div class="article-title">
+        <h1>É penta! Bahia aplica nova goleada no Confiança e é campeão da Copa do Nordeste<br />Tricolor vence por 5 a 0 com facilidade para se tornar pentacampeão</h1>
+      </div>
+
+      <div class="article-images">
+        <div class="image-container">
+          <div class="image-wrapper">
+            <img src="img/00816f48-a092-40f1-b05a-0cb735a0e42f 1.svg" alt="Celebração do Bahia com a taça" class="celebration-image" />
+            <div class="score-overlay">AMIGOS DO TOM 2X1</div>
+          </div>
+        </div>
+        <img src="img/1000260158-1920x1440 1.svg" alt="Arena Fonte Nova lotada" class="stadium-image" />
+      </div>
+    </article>
+
+    <!-- Article Content -->
+    <section class="article-content">
+      <div class="content-wrapper">
+        <p class="main-text">O Bahia se tornou, na noite deste sábado, o maior campeão da Copa do Nordeste. Depois de bater o Confiança na última quarta-feira por 4 a 1, em Aracaju, o Tricolor deu show e venceu por 5 a 0 diante de um público recorde na temporada na Arena Fonte Nova para conquistar o pentacampeonato regional. Tiago (3x), Lucho Rodríguez e Rezende foram os responsável por construir o placar elástico.</p>
+
+        <p class="secondary-text">Antes de trazer detalhes doque aconteceu em campo, vale destacar o show à parte protagonizado pela torcida do Bahia, que já parecia sentir o gosto do penta antes mesmo da bola rolar. Da Ladeira da Fonte até os portões de acesso ao estádio, torcedores eufóricos cantavam e usavam quaisquer artifícios que pudessem chamar mais atenção que o próprio grito, como foguetes e sinalizadores. Uma multidão "empurrou" o ônibus tricolor na chegada à Arena Fonte Nova em uma festa regada a gritos de "é campeão".<br /><br />Dentro do estádio a festa foi conduzida por 48.124 pagantes, maior público do ano, superando o Ba-Vi do Brasileirão (47.273), com direito a mosaico e bandeirão na entrada dos times em campo, que inevitavelmente passaram ao lado da tão desejada taça Orelhuda.</p>
+
+        <!-- Footer -->
+        <footer class="footer-section">
+          <img src="img/node-168.png" alt="Logo Bola na Rede" class="footer-logo" />
+          
+          <div class="footer-content">
+            <nav class="footer-links">
+              <div class="link-column">
+                <h3>Soluções</h3>
+                <a href="#">Texto de Exemplo</a>
+                <a href="#">Texto de Exemplo</a>
+                <a href="#">Texto de Exemplo</a>
+                <a href="#">Texto de Exemplo</a>
+                <a href="#">Texto de Exemplo</a>
+              </div>
+              <div class="link-column">
+                <h3>Soluções</h3>
+                <a href="#">Texto de Exemplo</a>
+                <a href="#">Texto de Exemplo</a>
+                <a href="#">Texto de Exemplo</a>
+                <a href="#">Texto de Exemplo</a>
+                <a href="#">Texto de Exemplo</a>
+              </div>
+              <div class="link-column">
+                <h3>Soluções</h3>
+                <a href="#">Texto de Exemplo</a>
+                <a href="#">Texto de Exemplo</a>
+                <a href="#">Texto de Exemplo</a>
+                <a href="#">Texto de Exemplo</a>
+                <a href="#">Texto de Exemplo</a>
+              </div>
+            </nav>
+
+            <div class="social-section">
+              <div class="social-content">
+                <h3 class="social-title">Acompanhe a gente</h3>
+                <div class="social-icons">
+                  <div class="social-icons-row">
+                    <img src="img/x-116.png" alt="Twitter/X" class="social-icon" />
+                    <img src="img/facebook-117.png" alt="Facebook" class="social-icon" />
+                  </div>
+                  <img src="img/linkedin-118.png" alt="LinkedIn" class="linkedin-icon" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
