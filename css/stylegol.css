@@ -177,16 +177,17 @@
     }
     
     .registration-form {
+      margin-top: 20px;
       background-color: #14ae5c;
       border-radius: 18px;
       padding: 20px;
       width: 100%;
-      max-width: 400px;
+      max-width: 450px;
       margin-left: 96px;
     }
     
     .form-group {
-      margin-bottom: 16px;
+      margin-bottom: 10px;
     }
     
     .form-label {
