@@ -713,6 +713,64 @@
         font-size: 30px;
       }
     }
+    .announcement-banner {
+      background-color: #272933;
+      border-radius: 20px;
+      padding: 32px 24px;
+      margin: 32px 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 24px;
+    }
+
+    .announcement-text {
+      color: #ffffff;
+    }
+
+    .announcement-title {
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+
+    .announcement-subtitle {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    .announcement-icon {
+      width: 152px;
+      height: 80px;
+    }
+
+    @media (min-width: 640px) {
+      .announcement-link {
+        text-decoration: none;
+        display: flex;
+      }
+
+          .announcement-banner {
+        width: -webkit-fill-available;
+        flex-direction: row;
+        text-align: left;
+        padding: 40px;
+        margin: 40px 24px;
+        text-decoration: none;
+        justify-content: center;
+    }
+
+      .announcement-title {
+        font-size: 36px;
+      }
+
+      .announcement-subtitle {
+        font-size: 28px;
+      }
+    }
   </style>
 <script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fruansapp2870back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
 </head>

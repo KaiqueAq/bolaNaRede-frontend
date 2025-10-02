@@ -50,11 +50,13 @@
     }
     
     /* Header */
-    .header {
+    .site-header {
       width: 100%;
-      background-color: #fef7ff;
-      padding: 22px 16px;
-      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
+    background-color: #0b7726;
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     }
     
     .browser-bar {
@@ -132,10 +134,16 @@
       height: 24px;
     }
     
-    .site-header {
-      background-color: #0b7726;
-      padding: 4px 94px;
-      margin: 4px 40px 0 0;
+    .header-content {
+      width: 78%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .hamburger-menu {
+      width: 66px;
+      height: 66px;
     }
     
     .site-nav {
@@ -893,13 +901,10 @@
 </head>
 <body>
   <main class="main-container">
-    <header class="header">
-      
-      <div class="site-header">
-        <nav class="site-nav">
-          <img src="img/node-168.png" alt="Bola na Rede Logo" class="logo" />
-          <img src="img/ic_round-menu.svg" alt="Menu" class="hamburger" />
-        </nav>
+    <header class="site-header">
+      <div class="header-content">
+        <img src="img/node-168.png" alt="Bola na Rede Logo" class="logo" />
+        <img src="img/ic_round-menu.svg" alt="Menu" class="hamburger-menu" />
       </div>
     </header>
 
