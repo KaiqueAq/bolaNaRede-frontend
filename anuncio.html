@@ -13,6 +13,50 @@
   <meta property="og:description" content="Anuncie no Bola na Rede e alcance milhares de amantes do futebol. Oferecemos banner topo, anúncios laterais e dentro das notícias." />
 
   <style>
+    /* Sidebar Styles */
+    .sidebar {
+      height: 100%;
+      width: 280px;
+      position: fixed;
+      z-index: 100;
+      top: 0;
+      right: -280px; /* Start off-screen */
+      background-color: #084116;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+      box-shadow: -5px 0 15px rgba(0,0,0,0.2);
+    }
+
+    .sidebar a {
+      padding: 10px 15px;
+      text-decoration: none;
+      font-size: 18px;
+      color: #d6efc7;
+      display: block;
+      transition: 0.3s;
+      font-family: 'Koulen', sans-serif;
+    }
+
+    .sidebar a:hover {
+      color: #f1f1f1;
+      background-color: #0b7726;
+    }
+
+    .sidebar .close-btn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+      color: #d6efc7;
+    }
+    .sidebar .close-btn:hover {
+      background-color: transparent;
+    }
+  </style>
+
+  <style>
     /* Reset and base styles */
     * {
       margin: 0;
@@ -541,9 +585,18 @@
   <div class="main-container">
     <div class="content-wrapper">
       <header class="site-header">
+        <div id="mySidebar" class="sidebar">
+          <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
+          <a href="scouts.html">Scouts</a>
+          <a href="portalnoticioas.html">Notícias</a>
+          <a href="noticiastime.html">Notícias dos babas</a>
+          <a href="aluguelcamp.html">Aluguel de Campos</a>
+          <a href="cadastrocamp.html">Cadastre seu Campo</a>
+          <a href="cadastrogol.html">Demanda de goleiro</a>
+        </div>
         <div class="header-content">
           <img src="img/node-168.png" alt="Bola na Rede Logo" class="logo" />
-          <img src="img/ic_round-menu.svg" alt="Menu" class="hamburger-menu" />
+          <img src="img/ic_round-menu.svg" alt="Menu" class="hamburger-menu" onclick="openNav()" style="cursor: pointer;" />
         </div>
       </header>
 
@@ -658,5 +711,16 @@
       </footer>
     </div>
   </div>
+  <script>
+    /* Set the width of the sidebar to 280px and the left margin of the page content to 280px */
+    function openNav() {
+      document.getElementById("mySidebar").style.right = "0";
+    }
+
+    /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+    function closeNav() {
+      document.getElementById("mySidebar").style.right = "-280px";
+    }
+  </script>
 </body>
 </html>
