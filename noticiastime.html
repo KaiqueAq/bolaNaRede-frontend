@@ -176,62 +176,6 @@
       height: 66px;
     }
 
-    /* News portal header */
-    .news-header {
-      width: 100%;
-      background-color: #0b7726;
-      padding: 36px;
-      margin-top: 18px;
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-    }
-
-    .news-title-section {
-      flex: 1;
-      padding: 0 24px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .news-title {
-      font-size: 42px;
-      font-family: 'Jockey One', serif;
-      font-weight: 400;
-      line-height: 1.4;
-      color: #ffffff;
-    }
-
-    .heart-icon {
-      width: 10%;
-      margin-bottom: 14px;
-      margin-left: 26px;
-      align-self: flex-end;
-    }
-
-    .divider-section {
-      width: 30%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      align-self: center;
-    }
-
-    .divider-text {
-      font-size: 52px;
-      font-family: Inter, sans-serif;
-      font-weight: 400;
-      line-height: 1.2;
-      color: #ffffff;
-      margin-left: 92px;
-    }
-
-    .portal-logo {
-      width: 38%;
-      border-radius: 20px;
-    }
-
     /* Main article */
     .main-article {
       width: 100%;
@@ -708,6 +652,68 @@
         font-size: 30px;
       }
     }
+
+    /* News portal header (from portalnoticioas.html) */
+    .news-portal-header {
+      width: 100%;
+      background-color: #0b7726;
+      margin-top: 24px;
+      padding: 30px 170px;
+    }
+    
+    .portal-header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+    
+    .portal-title {
+      font-size: 40px;
+      font-family: 'Jockey One', serif;
+      font-weight: 400;
+      line-height: 90px;
+      color: #ffffff;
+    }
+    
+    .portal-divider {
+      font-size: 50px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      line-height: 97px;
+      color: #ffffff;
+      margin: 6px 0;
+    }
+    
+    .portal-logo {
+      width: 118px;
+      height: 106px;
+      border-radius: 20px;
+      margin-right: 136px;
+    }
+
+    @media (max-width: 639px) {
+      .news-portal-header {
+        padding: 20px 16px;
+      }
+      .portal-header-content {
+        flex-direction: column;
+        gap: 16px;
+      }
+      .portal-title {
+        font-size: 28px;
+        line-height: 1.2;
+        text-align: center;
+      }
+      .portal-divider {
+        display: none;
+      }
+      .portal-logo {
+        width: 80px;
+        height: 72px;
+        margin-right: 0;
+      }
+    }
     .announcement-banner {
       background-color: #272933;
       border-radius: 20px;
@@ -766,6 +772,27 @@
         font-size: 28px;
       }
     }
+
+    @media (min-width: 640px) and (max-width: 767px) {
+      .portal-title {
+        font-size: 48px;
+      }
+    }
+    @media (min-width: 768px) {
+      .portal-title {
+        font-size: 56px;
+      }
+    }
+    @media (min-width: 1024px) {
+      .portal-title {
+        font-size: 64px;
+      }
+    }
+    @media (min-width: 1280px) {
+      .news-portal-header {
+        padding: 30px 170px;
+      }
+    }
   </style>
 </head>
 
@@ -801,13 +828,11 @@
       </a>
     </section>
     <!-- News Portal Header -->
-    <section class="news-header">
-      <div class="news-title-section">
-        <h2 class="news-title">PORTAL DE NOTÍCIAS TIME DO</h2>
+    <section class="news-portal-header">
+      <div class="portal-header-content">
+        <h2 class="portal-title">PORTAL DE NOTÍCIAS TIME DO</h2>
         <img src="img/coracao branco 1.svg" alt="Coração" class="heart-icon" />
-      </div>
-      <div class="divider-section">
-        <span class="divider-text">|</span>
+        <span class="portal-divider">|</span>
         <img src="img/node-168.png" alt="Logo Portal" class="portal-logo" />
       </div>
     </section>
