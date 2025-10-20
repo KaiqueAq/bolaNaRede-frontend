@@ -362,17 +362,21 @@
     }
     
     .goalkeeper-name {
-      background-color: #14ae5c;
-      border-radius: 30px;
-      padding: 8px 20px;
-      font-size: 36px;
-      font-family: 'Koulen', sans-serif;
-      font-weight: 400;
-      color: #ffffff;
-      text-align: center;
-      margin-bottom: 20px;
-      width: 286px;
-    }
+    display: flex;
+    background-color: #14ae5c;
+    border-radius: 161px;
+    font-size: 36px;
+    font-family: 'Koulen', sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 22px;
+    width: 406px;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
     
     .goalkeeper-details {
       font-size: 31px;
