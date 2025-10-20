@@ -376,26 +376,34 @@ button {
 }
 
 .social-section h3 {
-	font-size: 24px;
+	font-size: 30px;
 	font-weight: 700;
 	color: #000000;
 	margin-bottom: 16px;
 }
 
 .social-links {
-	display: flex;
-	gap: 24px;
-	align-items: center;
+	display: flex;	align-items: center;
+	margin-top: -2px;
+	margin-right: 14px;
 }
 
 .social-icon {
-	width: 40px;
-	height: 40px;
+	width: 64px;
+	height: 42px;
 	transition: transform 0.3s ease;
 }
 
 .social-icon:hover {
 	transform: scale(1.1);
+}
+
+.social-icon:not(:first-child) {
+	margin-left: 34px;
+}
+
+.social-icon:last-child {
+	margin-left: 48px;
 }
 
 /* Interactive states */

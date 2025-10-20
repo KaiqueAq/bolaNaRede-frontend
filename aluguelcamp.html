@@ -241,6 +241,7 @@
     }
     
     .location-filter {
+      cursor: pointer;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -284,14 +285,15 @@
     }
     
     .time-filter {
+      cursor: pointer;
       display: flex;
       justify-content: space-between;
-      align-items: flex-end;
+      align-items: center;
       width: 100%;
       max-width: 456px;
       background-color: #d9d9d9;
       border-radius: 10px;
-      padding: 22px;
+      padding: 18px;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     }
     
@@ -329,6 +331,7 @@
     }
     
     .sort-filter {
+      cursor: pointer;
       display: flex;
       justify-content: flex-start;
       align-items: center;
@@ -974,8 +977,9 @@
             </div>
             
             <div class="time-filter">
-              <span class="time-text">DIAS E HORAS DISPONÍVEIS</span>
               <img src="img/Schedule.svg" alt="Horario" class="location-icon" />
+              <img src="img/Schedule.svg" alt="Horario" class="location-icon" style="visibility: hidden;" />
+              <span class="time-text">DIAS E HORAS DISPONÍVEIS</span>
               <span class="close-x">x</span>
             </div>
             
@@ -1070,9 +1074,11 @@
                   <span class="rating-count">100 avaliações</span>
                 </div>
                 <div class="location-row">
-                  <span class="location-name">São cristovão - Salvador</span>
-                  <span class="map-text">Mostrar no mapa</span>
-                  <span class="distance-text">8,5 km de você</span>
+                  <div class="location-info">
+                    <span class="location-name">São cristovão - Salvador</span>
+                    <span class="map-text">Mostrar no mapa</span>
+                    <span class="distance-text">8,5 km de você</span>
+                  </div>
                   <button class="price-button">Preço</button>
                 </div>
                 <div class="field-type">Areia</div>
