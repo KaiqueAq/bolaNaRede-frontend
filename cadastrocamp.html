@@ -318,6 +318,7 @@
                   id="nome"
                   name="nome"
                   class="form-input"
+                  placeholder="Ex: Arena Ondina"
                   required
                   aria-required="true"
                 />
@@ -384,15 +385,13 @@
               </div>
 
               <div class="form-group">
-                <label for="bairro" class="form-label">BAIRRO*</label>
-                <input
-                  type="text"
-                  id="bairro"
-                  name="bairro"
-                  class="form-input"
-                  required
-                  aria-required="true"
-                />
+                <label for="neighborhood" class="form-label">BAIRRO*</label>
+                <select id="neighborhood" name="neighborhood" class="form-select">
+                  <option value>Selecione o bairro</option>
+                  <option value="brotas">Brotas</option>
+                  <option value="paralela">Paralela</option>
+                  <option value="caminho-arvores">Caminho das Árvores</option>
+                </select>
               </div>
 
               <div class="form-group">
