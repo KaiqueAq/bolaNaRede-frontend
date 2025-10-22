@@ -13,6 +13,75 @@
   <meta property="og:description" content="Cadastre-se como goleiro ou encontre goleiros disponíveis na sua região. Conecte-se com jogadores de futebol." />
   
   <link rel="stylesheet" href="css/stylegol.css" />
+  <style>
+    /* Estilos para o efeito escada */
+    .hero-titles {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      align-items: flex-start;
+      width: 60%;
+      margin-top: 112px;
+    }
+    .hero-titles .hero-title {
+      font-size: 55px;
+      font-family: Inter, sans-serif;
+      font-weight: 600;
+      line-height: 67px;
+      color: #ffffff;
+      background-color: #14ae5c;
+      border-radius: 42px;
+      padding: 4px 34px;
+    }
+    .hero-subtitle {
+      font-size: 55px;
+      font-family: Inter, sans-serif;
+      font-weight: 600;
+      line-height: 67px;
+      color: #ffffff;
+      border: 1px solid #14ae5c;
+      border-radius: 42px;
+      padding: 4px 32px;
+      margin-left: 74px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .hero-highlight {
+      font-size: 55px;
+      font-family: Inter, sans-serif;
+      font-weight: 600;
+      line-height: 67px;
+      color: #ffffff;
+      background-color: #14ae5c;
+      border-radius: 42px;
+      padding: 4px 34px;
+      margin-left: 172px;
+    }
+    .hero-final {
+      position: relative;
+      align-self: flex-end;
+      width: 66%;
+    }
+    .hero-final-bg {
+      width: 45%;
+      height: 86px;
+      border: 1px solid #14ae5c;
+      border-radius: 42px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      margin-left: -337px;
+    }
+    .hero-final-text {
+      position: absolute;
+      top: 50%;
+      left: 72px;
+      transform: translateY(-50%);
+      font-size: 55px;
+      font-family: Inter, sans-serif;
+      font-weight: 600;
+      line-height: 67px;
+      color: #ffffff;
+      margin-left: -337px;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
@@ -55,8 +124,19 @@
   <img src="img/rectangle-19-119.png" alt="Campo de futebol" class="hero-background" />
         
         <div class="hero-content">
+          <!-- Hero Titles -->
+          <div class="hero-titles">
+            <h1 class="hero-title">BOLA NA REDE</h1>
+            <div class="hero-subtitle">OS BABAS MAIS</div>
+            <div class="hero-highlight">DISPUTADOS</div>
+            <div class="hero-final">
+              <div class="hero-final-bg"></div>
+              <div class="hero-final-text">ESTÃO AQUI!</div>
+            </div>
+          </div>
+
           <!-- Registration Form -->
-          <form class="registration-form" role="form" aria-label="Goalkeeper Registration Form">
+          <form class="registration-form-gol" role="form" aria-label="Goalkeeper Registration Form">
             <div class="form-group">
               <label for="name" class="form-label">NOME*</label>
               <input type="text" id="name" name="name" class="form-input" required aria-required="true" />
@@ -113,13 +193,7 @@
             
             <button type="submit" class="submit-btn">Confirmar</button>
           </form>
-          
-          <!-- Hero Titles -->
-          <div class="hero-titles">
-            <div class="hero-title">CADASTRO</div>
-            <div class="hero-title outline">DE</div>
-            <div class="hero-title">GOLEIRO</div>
-          </div>
+
         </div>
       </section>
       
@@ -248,7 +322,7 @@
   <script>
     // Form validation and interactivity
     document.addEventListener('DOMContentLoaded', function() {
-      const form = document.querySelector('.registration-form');
+      const form = document.querySelector('.-gol');
       const citySelect = document.getElementById('city');
       const neighborhoodSelect = document.getElementById('neighborhood');
       

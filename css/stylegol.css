@@ -185,6 +185,15 @@
       max-width: 450px;
       margin-left: 96px;
     }
+    .registration-form-gol {
+      margin-top: 20px;
+      background-color: #14ae5c;
+      border-radius: 18px;
+      padding: 20px;
+      width: 100%;
+      max-width: 450px;
+      margin-left: -650px;
+    }
     
     .form-group {
       margin-bottom: 10px;
