@@ -153,47 +153,82 @@
             </div>
             
             <div class="form-group">
-              <label for="height" class="form-label">ALTURA*</label>
-              <input type="text" id="height" name="height" class="form-input" placeholder="Ex: 1,80m" required aria-required="true" />
+              <label for="cpf" class="form-label">CPF*</label>
+              <input type="text" id="cpf" class="form-input" required />
             </div>
             
             <div class="form-group">
-              <label for="dominant" class="form-label">PÉ E MÃO DOMINANTE*</label>
-              <select id="dominant" name="dominant" class="form-select" required aria-required="true">
-                <option value>Selecione o pé a mão dominante</option>
-                <option value="destro">Destro</option>
-                <option value="canhoto">Canhoto</option>
+              <label for="time" class="form-label">TIME DO CORAÇÃO</label>
+              <select id="time" class="form-select" required>
+                <option>Selecione seu time do coração</option>
+                <option value="Flamengo">Flamengo</option>
+                <option value="Palmeiras">Palmeiras</option>
+                <option value="São Paulo">São Paulo</option>
+                <option value="Corinthians">Corinthians</option>
+                <option value="Internacional">Internacional</option>
               </select>
             </div>
-            
+
             <div class="form-group">
-              <label for="phone" class="form-label">TELEFONE*</label>
-              <input type="tel" id="phone" name="phone" class="form-input" placeholder="(71) 99999-9999" required aria-required="true" />
+              <label class="form-label">MATRÍCULA DE SÓCIO</label>
+              <input type="text" class="form-input" />
             </div>
             
             <div class="form-group">
-              <label for="city" class="form-label">CIDADE*</label>
-              <select id="city" name="city" class="form-select" required aria-required="true">
-                <option value>Selecione a cidade</option>
-                <option value="salvador">Salvador</option>
-                <option value="lauro-freitas">Lauro de Freitas</option>
-                <option value="camacari">Camaçari</option>
-              </select>
+              <label class="form-label">VOCÊ É JOGADOR?*</label>
+              <div class="radio-group">
+                <input type="radio" id="is-player-yes" name="is_player" value="yes" required>
+                <label for="is-player-yes">Sim</label>
+                <input type="radio" id="is-player-no" name="is_player" value="no" required checked>
+                <label for="is-player-no">Não</label>
+              </div>
             </div>
             
-            <div class="form-group">
-              <label for="neighborhood" class="form-label">BAIRRO*</label>
-              <select id="neighborhood" name="neighborhood" class="form-select" required aria-required="true">
-                <option value>Selecione o bairro</option>
-                <option value="brotas">Brotas</option>
-                <option value="paralela">Paralela</option>
-                <option value="caminho-arvores">Caminho das Árvores</option>
-              </select>
+
+            <!-- Campos adicionais para jogadores -->
+            <div id="player-fields" style="display: none;">
+              <div class="form-group">
+                <label for="height" class="form-label">ALTURA*</label>
+                <input type="text" id="height" name="height" class="form-input" placeholder="Ex: 1,80m" />
+              </div>
+              
+              <div class="form-group">
+                <label for="dominant" class="form-label">PÉ E MÃO DOMINANTE*</label>
+                <select id="dominant" name="dominant" class="form-select">
+                  <option value>Selecione o pé a mão dominante</option>
+                  <option value="destro">Destro</option>
+                  <option value="canhoto">Canhoto</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <label for="phone" class="form-label">TELEFONE*</label>
+                <input type="tel" id="phone" name="phone" class="form-input" placeholder="(71) 99999-9999" />
+              </div>
+              
+              <div class="form-group">
+                <label for="city" class="form-label">CIDADE*</label>
+                <select id="city" name="city" class="form-select">
+                  <option value>Selecione a cidade</option>
+                  <option value="salvador">Salvador</option>
+                  <option value="lauro-freitas">Lauro de Freitas</option>
+                  <option value="camacari">Camaçari</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <label for="neighborhood" class="form-label">BAIRRO*</label>
+                <select id="neighborhood" name="neighborhood" class="form-select">
+                  <option value>Selecione o bairro</option>
+                  <option value="brotas">Brotas</option>
+                  <option value="paralela">Paralela</option>
+                  <option value="caminho-arvores">Caminho das Árvores</option>
+                </select>
+              </div>
             </div>
             
             <button type="submit" class="submit-btn">Confirmar</button>
           </form>
-
         </div>
       </section>
       
@@ -210,7 +245,7 @@
       
       <!-- Goalkeepers Section -->
       <section class="goalkeepers-section">
-        <h1 class="section-title">GOLEIROS À DISPOSIÇÃO</h1>
+        <h1 class="section-title">JOGADORES À DISPOSIÇÃO</h1>
         
         <div class="goalkeepers-grid">
           <!-- Goalkeeper 1 -->
@@ -319,6 +354,33 @@
     </footer>
   </div>
 
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const playerFields = document.getElementById('player-fields');
+      const radioYes = document.getElementById('is-player-yes');
+      const radioNo = document.getElementById('is-player-no');
+      const fieldsToToggle = playerFields.querySelectorAll('input, select');
+
+      function togglePlayerFields() {
+        if (radioYes.checked) {
+          playerFields.style.display = 'block';
+          fieldsToToggle.forEach(field => field.required = true);
+        } else {
+          playerFields.style.display = 'none';
+          fieldsToToggle.forEach(field => {
+            field.required = false;
+            field.value = ''; // Limpa o valor ao esconder
+          });
+        }
+      }
+
+      radioYes.addEventListener('change', togglePlayerFields);
+      radioNo.addEventListener('change', togglePlayerFields);
+
+      // Garante o estado inicial correto
+      togglePlayerFields();
+    });
+  </script>
   <script>
     // Form validation and interactivity
     document.addEventListener('DOMContentLoaded', function() {

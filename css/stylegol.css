@@ -182,8 +182,7 @@
       border-radius: 18px;
       padding: 20px;
       width: 100%;
-      max-width: 450px;
-      margin-left: 96px;
+      max-width: 450px; /* Mantém a largura máxima do formulário */
     }
     .registration-form-gol {
       margin-top: 20px;
@@ -192,7 +191,6 @@
       padding: 20px;
       width: 100%;
       max-width: 450px;
-      margin-left: -650px;
     }
     
     .form-group {
